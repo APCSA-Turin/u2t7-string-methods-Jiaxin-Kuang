@@ -1,21 +1,31 @@
 public class CustomStringsMethodsRunner {
     public static void main(String[] args) {
         CustomStringsMethods methods = new CustomStringsMethods();
-        String str = methods.halvesReversed("computer");  //even # of letters
+        String str = methods.insertAt("ghost", "BOO!", "o");
         System.out.println(str);
-        str = methods.halvesReversed("computers");        //odd # of letters
+        str = methods.insertAt("ghost", "BOO!", "st");
         System.out.println(str);
-        str = methods.halvesReversed("sky");
+        str = methods.insertAt("ghost", "BOO!", "m");
         System.out.println(str);
-        str = methods.halvesReversed("weekend");
+        str = methods.insertAt("spooooky!", "YIKES", "o");
         System.out.println(str);
-        str = methods.halvesReversed("an");
+        str = methods.insertAt("happy birthday!", "18th", "y");
         System.out.println(str);
-        str = methods.halvesReversed("I");
+        str = methods.insertAt("happy birthday!", "18th", "birthday");
         System.out.println(str);
-        str = methods.halvesReversed("see you soon");
+        str = methods.insertAt("happy birthday!", "18th", " ");
         System.out.println(str);
-        str = methods.halvesReversed("see you later!");
+        str = methods.insertAt("happy birthday!", " 18th", " ");
         System.out.println(str);
+        str = methods.insertAt("happy birthday!", "18th ", "bir");
+        System.out.println(str);
+        str = methods.insertAt("happy birthday!", "18th", "!");
+        System.out.println(str);
+        str = methods.insertAt("happy birthday!", "18th", "z");
+        System.out.println(str);
+        str = methods.insertAt("a", "m", "a");
+        System.out.println(str);
+        str = methods.insertAt("a", "m", "p");
+        System.out.println(str);        
     }
 }
