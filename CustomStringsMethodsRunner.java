@@ -1,31 +1,35 @@
 public class CustomStringsMethodsRunner {
     public static void main(String[] args) {
         CustomStringsMethods methods = new CustomStringsMethods();
-        String str = methods.insertAt("ghost", "BOO!", "o");
+        String str = methods.endUp("It's Thursday", 3);
         System.out.println(str);
-        str = methods.insertAt("ghost", "BOO!", "st");
+        str = methods.endUp("hello friend", 3);
         System.out.println(str);
-        str = methods.insertAt("ghost", "BOO!", "m");
+        str = methods.endUp("hello friend!", 3);
         System.out.println(str);
-        str = methods.insertAt("spooooky!", "YIKES", "o");
+        str = methods.endUp("Shhhh! Be quiet", 3);
         System.out.println(str);
-        str = methods.insertAt("happy birthday!", "18th", "y");
+        str = methods.endUp("Yes", 3);
         System.out.println(str);
-        str = methods.insertAt("happy birthday!", "18th", "birthday");
+        str = methods.endUp("Yess", 3);
         System.out.println(str);
-        str = methods.insertAt("happy birthday!", "18th", " ");
+        str = methods.endUp("Yesss", 3);
         System.out.println(str);
-        str = methods.insertAt("happy birthday!", " 18th", " ");
+        str = methods.endUp("no", 3);
         System.out.println(str);
-        str = methods.insertAt("happy birthday!", "18th ", "bir");
+        str = methods.endUp("no!", 3);
         System.out.println(str);
-        str = methods.insertAt("happy birthday!", "18th", "!");
+        str = methods.endUp("noo!", 3);
         System.out.println(str);
-        str = methods.insertAt("happy birthday!", "18th", "z");
+        str = methods.endUp("noo!!", 3);
         System.out.println(str);
-        str = methods.insertAt("a", "m", "a");
+        str = methods.endUp("ALREADY UPPERCASE", 3);
         System.out.println(str);
-        str = methods.insertAt("a", "m", "p");
-        System.out.println(str);        
+        str = methods.endUp("hello friend", 1);
+        System.out.println(str);
+        str = methods.endUp("hello friend", 6);
+        System.out.println(str);
+        str = methods.endUp("hello friend", 20);
+        System.out.println(str);         
     }
 }

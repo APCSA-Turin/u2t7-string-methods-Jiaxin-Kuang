@@ -14,7 +14,7 @@ public class CustomStringsMethods {
     public String halvesReversed(String myString) {
         return myString.substring(myString.length()/2) + myString.substring(0, myString.length()/2);
     }
-    /*public String pigLatin(String orig) {
+    public String pigLatin(String orig) {
         return orig.substring(1) + orig.charAt(0) + "ay";
     }
     public String removeCharacter(String myString, int removeIdx) {
@@ -32,5 +32,13 @@ public class CustomStringsMethods {
         else{
             return orig + insertText;
         }
-    }*/ 
+    }
+    public String endUp(String myString, int numToCap){
+        if(numToCap < myString.length()){
+            return myString.substring(0,myString.length() - numToCap) + myString.substring(myString.length() - numToCap).toUpperCase();
+        }
+        else{
+            return myString.toUpperCase();
+        }
+    }
 }  
