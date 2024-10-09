@@ -9,13 +9,13 @@ public class CustomStringsMethods {
         }
     }
     public String funnyString(String str, int idx) {
-        return str.charAt(idx) + str + str.charAt(idx);
+        return str.substring(idx, idx + 1) + str + str.substring(idx, idx + 1);
     }
     public String halvesReversed(String myString) {
         return myString.substring(myString.length()/2) + myString.substring(0, myString.length()/2);
     }
     public String pigLatin(String orig) {
-        return orig.substring(1) + orig.charAt(0) + "ay";
+        return orig.substring(1) + orig.substring(0) + "ay";
     }
     public String removeCharacter(String myString, int removeIdx) {
         if(removeIdx <= myString.length() - 1){
@@ -39,6 +39,14 @@ public class CustomStringsMethods {
         }
         else{
             return myString.toUpperCase();
+        }
+    }
+    public String yellOrWhisper(String myString) {
+        if(myString.substring(0,1).equals(myString.substring(0,1).toUpperCase())){
+            return myString.toUpperCase();
+        }
+        else{
+            return myString.toLowerCase();
         }
     }
 }  

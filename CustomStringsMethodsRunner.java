@@ -1,35 +1,13 @@
 public class CustomStringsMethodsRunner {
     public static void main(String[] args) {
         CustomStringsMethods methods = new CustomStringsMethods();
-        String str = methods.endUp("It's Thursday", 3);
-        System.out.println(str);
-        str = methods.endUp("hello friend", 3);
-        System.out.println(str);
-        str = methods.endUp("hello friend!", 3);
-        System.out.println(str);
-        str = methods.endUp("Shhhh! Be quiet", 3);
-        System.out.println(str);
-        str = methods.endUp("Yes", 3);
-        System.out.println(str);
-        str = methods.endUp("Yess", 3);
-        System.out.println(str);
-        str = methods.endUp("Yesss", 3);
-        System.out.println(str);
-        str = methods.endUp("no", 3);
-        System.out.println(str);
-        str = methods.endUp("no!", 3);
-        System.out.println(str);
-        str = methods.endUp("noo!", 3);
-        System.out.println(str);
-        str = methods.endUp("noo!!", 3);
-        System.out.println(str);
-        str = methods.endUp("ALREADY UPPERCASE", 3);
-        System.out.println(str);
-        str = methods.endUp("hello friend", 1);
-        System.out.println(str);
-        str = methods.endUp("hello friend", 6);
-        System.out.println(str);
-        str = methods.endUp("hello friend", 20);
-        System.out.println(str);         
+        System.out.println(methods.longerThan("hedgehog", 7));
+        System.out.println(methods.funnyString("penguin", 5));
+        System.out.println(methods.halvesReversed("shark"));
+        System.out.println(methods.pigLatin("hummingbird"));
+        System.out.println(methods.removeCharacter("polar bear", 4));
+        System.out.println(methods.insertAt("jackel", "fox", "ac"));
+        System.out.println(methods.endUp("pronghorn", 4));
+        System.out.println(methods.yellOrWhisper("Rabbit"));
     }
 }
